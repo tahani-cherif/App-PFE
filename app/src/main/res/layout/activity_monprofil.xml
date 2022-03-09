@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Monprofile"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bleu">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/retour"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/retour" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="@string/profil"
+                app:titleTextColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/dec"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_265sdp"
+                android:src="@drawable/ic_baseline_https_24" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:src="@drawable/personne"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nomprenom"
+        android:textAlignment="center"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_22ssp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adresmail"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:textColor="@color/gris2"
+        android:textStyle="bold"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        app:dividerInsetStart="@dimen/_16sdp"
+        app:dividerInsetEnd="@dimen/_16sdp"
+        app:dividerColor="@color/gris2"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etat"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_22ssp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etatavug"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:textColor="@color/gris2"
+        android:textStyle="bold"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        app:dividerInsetStart="@dimen/_16sdp"
+        app:dividerInsetEnd="@dimen/_16sdp"
+        app:dividerColor="@color/gris2"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/help" />
+
+</LinearLayout>
+</ScrollView>

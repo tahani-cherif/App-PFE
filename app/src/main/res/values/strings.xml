@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string-array name="spinner1">
+        <item>Francais</item>
+        <item>Anglais</item>
+        <item>Tunisien</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>Femme</item>
+        <item>Homme</item>
+    </string-array>
+    <string name="title_activity_main12">MainActivity12</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="nomapp">test app</string>
+    <string name="rech">Rechrche</string>
+    <string name="agenda">Agenda</string>
+    <string name="block">Bloc-notes</string>
+    <string name="camera">Camera</string>
+    <string name="contact">Contact</string>
+    <string name="hor">Horloge</string>
+    <string name="telephone">Téléphone</string>
+    <string name="msg">Messages</string>
+    <string name="par">Paramétres</string>
+    <string name="map">Maps</string>
+    <string name="photo">Photos</string>
+    <string name="controle">Centre de controle</string>
+    <string name="mtp">Mot de passe</string>
+    <string name="mtpA">Mot de passe actuel</string>
+    <string name="smtpA">saisir le mot de passe actuel</string>
+    <string name="nmtp">Nouveau mot de passe</string>
+    <string name="nvmtp">saisir le nouveau mot de passe</string>
+    <string name="cnmtp">Confirmation du nouveau mot de passe</string>
+    <string name="confirme">confirmer le mot de passe</string>
+    <string name="modef">Modifier</string>
+    <string name="profil">Mon profil</string>
+    <string name="nomprenom">Nom Prénom</string>
+    <string name="mail">Adresse mail</string>
+    <string name="adresmail">exemple@gmail.com</string>
+    <string name="etat">Etat aveuglette</string>
+    <string name="etatavug">malvoyant ou non voyant</string>
+    <string name="conx">Connexion</string>
+    <string name="mtpoblier">mot de passe oublié</string>
+    <string name="ins">Inscription</string>
+    <string name="paenompre">Paramétres generaux du compte</string>
+    <string name="nomprenomexp">tahani cherif</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">prenom</string>
+    <string name="avg">Non voyant</string>
+    <string name="mal">Malvoyant</string>
+    <string name="validmtp">Valider le mot de passe</string>
+    <string name="parvoix">Paramétres de la voix</string>
+    <string name="activer">Activer</string>
+    <string name="lang">Langue</string>
+    <string name="voix">voix</string>
+    <string name="vitesse">Vitesse</string>
+    <string name="franc">Francais</string>
+    <string name="anglais">Anglais</string>
+    <string name="notif">Notification</string>
+    <string name="activnotif">Activer notification</string>
+    <string name="dec">Déconnection</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="valider">Valider</string>
+    <string name="saisirnoumdp">saisir le nouveau mot de passe</string>
+</resources>

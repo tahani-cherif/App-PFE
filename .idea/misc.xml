@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/conx_foreground.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/circle.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/conx.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/conx_background.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/famile.xml" value="0.1725" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/help.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_baseline_https_24.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/lock.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/mail.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/menu.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/next.xml" value="0.1725" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/personne.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/rech.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/recherche.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/retour.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/sekbar.xml" value="0.1655" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/sekbarthum.xml" value="0.1655" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/stylebutt.xml" value="0.1725" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/stylebutton.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/styleinput.xml" value="0.1645" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/stylesek.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/thum.xml" value="0.1655" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/thumdsek.xml" value="0.1605" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/trak.xml" value="0.1655" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_connexion.xml" value="0.16" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_inscription.xml" value="0.19298245614035087" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_langue.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main10.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main11.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main2.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main3.xml" value="0.176" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main4.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main5.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main6.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main7.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main8.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main9.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_monprofil.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_motsdepasse.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_paravoix.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/mailmdpoublie.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/mdpoublie.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/my_dropdwon_item.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/my_size_item.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/nheader_navigation.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/sekbarthum.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/test.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/menu/exmenu.xml" value="0.16" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/menu/menu.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/conx.xml" value="0.1605" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

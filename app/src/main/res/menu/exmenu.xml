@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option1"
+        android:icon="@drawable/user"
+        android:title="@string/paenompre"
+        />
+    <item android:id="@+id/option2"
+        android:title="@string/parvoix"
+        android:icon="@drawable/publicrelation"/>
+    <item android:id="@+id/option3"
+        android:title="@string/controle"
+        android:icon="@drawable/settings"/>
+    <item android:id="@+id/option4"
+        android:title="@string/lang"
+        android:icon="@drawable/global"/>
+    <item android:id="@+id/option5"
+        android:title="@string/notif"
+        android:icon="@drawable/notification"/>
+    <item android:id="@+id/option6"
+    android:title="@string/dec"
+        android:icon="@drawable/deconnecter"/>
+</menu>

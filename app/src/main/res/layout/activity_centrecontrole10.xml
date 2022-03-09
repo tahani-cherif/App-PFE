@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Maincentrecontrole"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bleu">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/retourcent"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:src="@drawable/retour" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="@string/controle"
+                app:titleTextColor="@color/white"
+                android:layout_marginTop="@dimen/_4sdp"/>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_30sdp">
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:checked="true"
+            android:layout_marginTop="-3dp"
+            android:text="nom d'app "
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:thumb="@drawable/thum"
+            app:track="@drawable/trak"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_30sdp">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:checked="true"
+            android:layout_marginTop="-3dp"
+            android:text="nom d'app "
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:thumb="@drawable/thum"
+            app:track="@drawable/trak"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
