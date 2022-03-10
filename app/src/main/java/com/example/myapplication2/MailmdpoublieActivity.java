@@ -1,5 +1,6 @@
 package com.example.myapplication2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -15,10 +16,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MailmdpoublieActivity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     Button btnEnv;
     EditText mailmodef;
     ImageView retourmdp;
@@ -26,6 +31,7 @@ public class MailmdpoublieActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mAuth = FirebaseAuth.getInstance();
         setContentView(R.layout.mailmdpoublie);
         mailmodef=findViewById(R.id.mailmodef);
         btnEnv =findViewById(R.id.alert);
@@ -53,24 +59,39 @@ public class MailmdpoublieActivity extends AppCompatActivity {
                     mailmodef.requestFocus();
                     return;
                 }
-                myDialog.setTitle("Entrer le code!");
-                final EditText code = new EditText(MailmdpoublieActivity.this);
-                code.setInputType(InputType.TYPE_CLASS_NUMBER);
-                myDialog.setView(code);
-                myDialog.setPositiveButton("valider", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(MailmdpoublieActivity.this, MdpoublieActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                myDialog.setNegativeButton("Quitter", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.cancel();
-                    }
-                });
-                myDialog.show();
+                mAuth.sendPasswordResetEmail(mailmodeff)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful())
+                                {
+                                    myDialog.setTitle("Entrer le code!");
+                                    final EditText code = new EditText(MailmdpoublieActivity.this);
+                                    code.setInputType(InputType.TYPE_CLASS_NUMBER);
+                                    myDialog.setView(code);
+                                    myDialog.setPositiveButton("valider", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            Intent intent = new Intent(MailmdpoublieActivity.this, MdpoublieActivity.class);
+                                            startActivity(intent);
+                                        }
+                                    });
+                                    myDialog.setNegativeButton("Quitter", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+                                            dialogInterface.cancel();
+                                        }
+                                    });
+                                    myDialog.show();
+                                }
+                                else
+                                {
+                                    Toast.makeText(MailmdpoublieActivity.this,"try again",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+
+
             }
         });
     }

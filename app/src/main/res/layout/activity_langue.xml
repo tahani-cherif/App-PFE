@@ -44,6 +44,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginStart="@dimen/_30sdp">
         <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/fran"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:checked="true"
@@ -64,6 +65,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginStart="@dimen/_30sdp">
         <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/ang"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:checked="false"

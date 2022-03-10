@@ -26,6 +26,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
@@ -41,10 +42,12 @@ public class MainActivity extends AppCompatActivity {
     private IntentFilter mIntentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
     DecimalFormat df = new DecimalFormat("#.##");
     private WifiManager wifiManager;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
         ImageView wifi=findViewById(R.id.wifi);
         Date date= Calendar.getInstance().getTime();
         String formadate= DateFormat.getDateInstance(DateFormat.LONG).format(date);
@@ -91,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent5);
                             return true;
                         case R.id.option6:
+                            mAuth.signOut();
                             Intent intent6 = new Intent(MainActivity.this, Connexion.class);
                             startActivity(intent6);
                             finish();

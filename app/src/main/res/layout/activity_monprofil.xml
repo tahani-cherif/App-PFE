@@ -50,6 +50,7 @@
         android:layout_height="@dimen/_180sdp"
         android:src="@drawable/personne"/>
     <TextView
+        android:id="@+id/nomprenom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nomprenom"
@@ -93,6 +94,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"/>
     <TextView
+        android:id="@+id/etatprofil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/etatavug"

@@ -44,7 +44,7 @@
     <string name="nomprenom">Nom Prénom</string>
     <string name="mail">Adresse mail</string>
     <string name="adresmail">exemple@gmail.com</string>
-    <string name="etat">Etat aveuglette</string>
+    <string name="etat">Etat pathologique </string>
     <string name="etatavug">malvoyant ou non voyant</string>
     <string name="conx">Connexion</string>
     <string name="mtpoblier">mot de passe oublié</string>
