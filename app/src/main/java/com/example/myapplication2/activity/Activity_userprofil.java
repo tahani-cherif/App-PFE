@@ -62,12 +62,13 @@ public class Activity_userprofil extends AppCompatActivity {
                     startActivity(new Intent(this, Activity_connexion.class));
                     finish(); }
         );
-        reference= FirebaseDatabase.getInstance().getReference("Users");
-      reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+        reference= FirebaseDatabase.getInstance().getReference().child("Users");
+      reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                utilisateur userprofil=snapshot.getValue(utilisateur.class);
-                Log.d("Currentdate",userprofil.getMail());
+                for(DataSnapshot snapshot1:snapshot.getChildren()){
+               if(snapshot1.getKey().equals(userID)){
+                utilisateur userprofil=snapshot1.getValue(utilisateur.class);
                 if (userprofil != null)
                 {   String nom=userprofil.getNom();
                     String prenom=userprofil.getPrenom();
@@ -78,7 +79,8 @@ public class Activity_userprofil extends AppCompatActivity {
                     etattext.setText(etatuser);
                     String b=nom+prenom+mailuser+etatuser;
                     textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
-                }
+               //     Log.d("Currentdate",userprofil.getMail());
+                }}}
             }
 
             @Override

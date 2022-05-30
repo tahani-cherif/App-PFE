@@ -128,11 +128,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d("bbb", String.valueOf(lastposition));
         }
         editor=sharedPreferences2.edit();
-        SharedPreferences sharedPreferences3= getSharedPreferences("lastsetting2", Context.MODE_PRIVATE);
-        if (sharedPreferences3 != null) {
-            isConnedted3 = sharedPreferences3.getString("voice2","");
-        }
-        Log.d("aa", isConnedted3);
         sharedPreferencess= getSharedPreferences("agenda", Context.MODE_PRIVATE);
         editor2=sharedPreferencess.edit();
         Resources res = getResources();
@@ -153,7 +148,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onInit(int i) {
                 if (i == TextToSpeech.SUCCESS) {
-
                     if (langue == 1) {
                         setAppLocale("fr");
                         if(test2==0)
@@ -161,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
                         if(test2==1){
                             textToSpeech.setLanguage(Locale.CANADA_FRENCH);
                         }
-
                     }
                     else   if (langue==2) {
                         setAppLocale("en");
@@ -180,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("TTS", "Initilization Failed!"); } }} );
 
        if (langue==2) {
-
             if(test2==0)
                 textToSpeech.setLanguage(Locale.ENGLISH);
             setAppLocale("en");
@@ -252,12 +244,12 @@ public class MainActivity extends AppCompatActivity {
             userID = currentUser.getUid();
             Log.d("Entered","yessss");
         }
-        reference= FirebaseDatabase.getInstance().getReference("Users");
-        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+        reference= FirebaseDatabase.getInstance().getReference().child("Users");
+      reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 utilisateur userprofil=snapshot.getValue(utilisateur.class);
-                Log.d("Currentdate",userprofil.getMail());
+               // Log.d("Currentdate",userprofil.getMail());
                 if (userprofil != null)
                 {  agen=userprofil.getAgen();
                     gamil=userprofil.getGamil();
@@ -269,7 +261,6 @@ public class MainActivity extends AppCompatActivity {
                     map=userprofil.getMap();
                     photo=userprofil.getPhoto();
                     notif=userprofil.getNotif();
-
                 }
             }
 

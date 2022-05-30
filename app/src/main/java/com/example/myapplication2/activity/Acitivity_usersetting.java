@@ -80,19 +80,19 @@ public class Acitivity_usersetting extends AppCompatActivity {
             userID = currentUser.getUid(); //Do what you need to do with the id
             Log.d("Entered","yessss");
         }
-        reference= FirebaseDatabase.getInstance().getReference("Users");
-      reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+        reference= FirebaseDatabase.getInstance().getReference().child("Users");
+      reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                utilisateur userprofil=snapshot.getValue(utilisateur.class);
-
-
-                Log.d("Currentdate",userprofil.getMail());
+               for(DataSnapshot snapshot1:snapshot.getChildren()){
+                   if(snapshot1.getKey().equals(userID)){
+                utilisateur userprofil=snapshot1.getValue(utilisateur.class);
+                 Log.d("Currentdate",userprofil.getMail());
                 if (userprofil != null)
                 {   String nom=userprofil.getNom();
                     String prenom=userprofil.getPrenom();
                     nomprenom.setText(nom +" "+prenom);
-                }
+                }}}
             }
 
             @Override
