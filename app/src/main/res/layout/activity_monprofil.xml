@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".Monprofile"
+    tools:context=".activity.Activity_userprofil"
     >
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -45,12 +45,12 @@
                 android:src="@drawable/ic_baseline_https_24" />
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
-    <ImageView
+    <com.makeramen.roundedimageview.RoundedImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_180sdp"
-        android:src="@drawable/personne"/>
+        android:src="@drawable/avatar"/>
     <TextView
-        android:id="@+id/nomprenom"
+        android:id="@+id/nomprofil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nomprenom"
@@ -68,13 +68,14 @@
         android:textColor="@color/black"
         android:textStyle="bold"/>
     <TextView
+        android:id="@+id/emailprofil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/adresmail"
         android:layout_marginTop="@dimen/_10sdp"
         android:textSize="@dimen/_16ssp"
         android:layout_marginStart="@dimen/_30sdp"
-        android:textColor="@color/gris2"
+        android:textColor="@color/grais3"
         android:textStyle="bold"/>
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
@@ -101,7 +102,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:textSize="@dimen/_16ssp"
         android:layout_marginStart="@dimen/_30sdp"
-        android:textColor="@color/gris2"
+        android:textColor="@color/grais3"
         android:textStyle="bold"/>
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
@@ -111,13 +112,5 @@
         app:dividerColor="@color/gris2"
         android:layout_marginTop="@dimen/_20sdp"
         />
-
-    <ImageView
-        android:layout_width="@dimen/_45sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:src="@drawable/help" />
-
 </LinearLayout>
 </ScrollView>

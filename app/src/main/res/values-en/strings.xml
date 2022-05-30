@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">My Application2</string>
+    <string-array name="spinner1">
+        <item>French</item>
+        <item>English</item>
+        <item>Arab</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>Women</item>
+        <item>Man</item>
+    </string-array>
+    <string name="title_activity_main12" >MainActivity12</string>
+    <string name="navigation_drawer_open" >Open navigation drawer</string>
+    <string name="navigation_drawer_close" >Close navigation drawer</string>
+    <string name="nav_header_title" >Android Studio</string>
+    <string name="nav_header_subtitle" >android.studio@android.com</string>
+    <string name="nav_header_desc" >Navigation header</string>
+    <string name="action_settings" >Settings</string>
+    <string name="menu_home" >Home</string>
+    <string name="menu_gallery" >Gallery</string>
+    <string name="menu_slideshow" >Slideshow</string>
+    <string name="nomapp" >My V-Eyes</string>
+    <string name="rech" >search</string>
+    <string name="agenda" >Calendar</string>
+    <string name="GMAIL" >Gmail</string>
+    <string name="camera" >Camera</string>
+    <string name="contact" >Contacts</string>
+    <string name="hor" >Clock</string>
+    <string name="telephone" >Phone</string>
+    <string name="msg" >Messages</string>
+    <string name="par" >Settings</string>
+    <string name="map" >Maps</string>
+    <string name="photo" >Photos</string>
+    <string name="controle">Control center</string>
+    <string name="mtp">Password</string>
+    <string name="mtpA" >Current Password</string>
+    <string name="smtpA" >Enter the current password</string>
+    <string name="nmtp" >New Password</string>
+    <string name="nvmtp" >Enter the new password</string>
+    <string name="cnmtp" >Confirmation of the new password</string>
+    <string name="confirme" >Confirm the password</string>
+    <string name="modef" >Edit</string>
+    <string name="profil">My profile</string>
+    <string name="nomprenom" >Last name First Name</string>
+    <string name="mail" >Mail address</string>
+    <string name="adresmail">example@gmail.com</string>
+    <string name="etat">Pathological state</string>
+    <string name="etatavug" >visually impaired or blind</string>
+    <string name="conx">Login</string>
+    <string name="mtpoblier" >Forgot your password</string>
+    <string name="ins" >Sign up</string>
+    <string name="paenompre">General account settings</string>
+    <string name="nomprenomexp" >tahani cherif</string>
+    <string name="nom" >First Name</string>
+    <string name="prenom" >Last name</string>
+    <string name="avg" >blind</string>
+    <string name="mal">visually impaired</string>
+    <string name="validmtp">Validate password</string>
+    <string name="parvoix" >open voice settings, to choose a language between the 3 languages, you have to say it either French, or English, or Arabic, to choose the type of voice  you have to say woman or man</string>
+    <string name="activer" >Activate</string>
+    <string name="lang">Language</string>
+    <string name="voix" >voice</string>
+    <string name="vitesse" >Speed</string>
+    <string name="franc" >French</string>
+    <string name="anglais" >English</string>
+    <string name="notif" >Notification</string>
+    <string name="activnotif" >Enable notifications</string>
+    <string name="dec">Sign out</string>
+    <string name="envoyer" >Send</string>
+    <string name="valider" >To validate</string>
+    <string name="saisirnoumdp" >enter new password</string>
+    <string name="menu">General account settings, Voice settings, control center, langauge, notification, Sign out</string>
+    <string name="parge">open general account settings, choose between modification name and surname, or password</string>
+    <string name="parvo">Voice settings</string>
+    <string name="cc">open control center To disable an application, say disable plus application name,
+To activate an application, say activate plus the name of the application</string>
+    <string name="parla">open language to activate the language in French, please say french , to activate the language in English, please say English, to activate the language in Arabic, please say Arabic</string>
+    <string name="parnot">open notification to activate notifications, please say turn on notification, to deactivate notifications, please say turn off notification </string>
+    <string name="parconx">want to register or have you forgotten the password or want to log in</string>
+    <string name="date">today is</string>
+    <string name="time">the time is</string>
+    <string name="temp">the temperature is</string>
+    <string name="appmenu">the applications are calendar, gmail, camera, contact, clock, telephone, messages , maps, photos</string>
+    <string name="vgmail">open gmail application</string>
+    <string name="vphoto">open photos application</string>
+    <string name="vtele">open phone application</string>
+    <string name="vcal">open calendar application</string>
+    <string name="vcamera">open camera application</string>
+    <string name="vcontact">open contact application</string>
+    <string name="vhrlog">open clock application</string>
+    <string name="vmssg">open message application</string>
+    <string name="vmap">open maps application</string>
+    <string name="fal">Try again</string>
+    <string name="retourAcc">Back to Home</string>
+    <string name="ouvrnom">open first and last name</string>
+    <string name="ouvrmdp">open password</string>
+    <string name="remplirechamp">To fill the fields say yes</string>
+    <string name="activfra"> French language is activated</string>
+    <string name="activang">English language is activated</string>
+    <string name="activarab">Arab language is activated</string>
+    <string name="decnotif">notification disable</string>
+    <string name="actnotif">notification enable</string>
+    <string name="retouparcomp">back to general account settings</string>
+    <string name="champoblig">Required Field</string>
+    <string name="verifmdp">check password</string>
+    <string name="max8"> password must contain minimum 8 characters</string>
+    <string name="succe">The update is successful</string>
+    <string name="verifdonne">check data</string>
+    <string name="entmdp">enter your current password</string>
+    <string name="entvmdp">enter the new password</string>
+    <string name="entcmdp">enter the new password again for confirmation</string>
+    <string name="entnom">enter your new first name</string>
+    <string name="activerr">enable</string>
+    <string name="app">application</string>
+    <string name="desa">disable</string>
+    <string name="arabe">Arabic</string>
+    <string name="entnompre">Enter your new last name</string>
+    <string name="cmdp">Confirm the password</string>
+    <string name="probconx">Incoming data does not match any account</string>
+    <string name="loding">Loading...</string>
+    <string name="notifsms1">you received a message from</string>
+    <string name="notifsms2">, contains</string>
+    <string name="notifphone">you received a call from</string>
+    <string name="appdesac">this application is inaccessible</string>
+</resources>

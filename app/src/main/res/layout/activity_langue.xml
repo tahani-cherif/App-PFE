@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Langue"
+    tools:context=".activity.Activity_Langue"
     android:orientation="vertical">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -35,6 +35,13 @@
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:title="@string/lang"
                 app:titleTextColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/voicelang"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_260sdp"
+                android:src="@drawable/voice" />
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout
@@ -71,6 +78,27 @@
             android:checked="false"
             android:layout_marginTop="-3sp"
             android:text="@string/anglais"
+            android:textSize="@dimen/_23ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:thumb="@drawable/thum"
+            app:track="@drawable/trak"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_30sdp">
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/arb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:checked="false"
+            android:layout_marginTop="-3sp"
+            android:text="@string/arabe"
             android:textSize="@dimen/_23ssp"
             android:textStyle="bold"
             android:textColor="@color/black"

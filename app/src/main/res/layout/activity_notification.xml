@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Notification"
+    tools:context=".activity.Activity_notification"
     android:orientation="vertical">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -31,6 +31,12 @@
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:title="@string/notif"
                 app:titleTextColor="@color/white" />
+            <ImageView
+                android:id="@+id/voicenotif"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_260sdp"
+                android:src="@drawable/voice" />
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout
@@ -39,6 +45,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/_20sdp">
         <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/notif"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:checked="true"

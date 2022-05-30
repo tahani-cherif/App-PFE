@@ -12,5 +12,7 @@
     <color name="gris2">#CFD8DC</color>
     <color name="bleu2">#00B0FF</color>
     <color name="bleu3">#82B1FF</color>
+    <color name="grais3">#455A64</color>
+    <color name="trans">#00000000 </color>.
 
 </resources>

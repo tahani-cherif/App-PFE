@@ -5,7 +5,7 @@
         android:title="@string/paenompre"
         />
     <item android:id="@+id/option2"
-        android:title="@string/parvoix"
+        android:title="@string/parvo"
         android:icon="@drawable/publicrelation"/>
     <item android:id="@+id/option3"
         android:title="@string/controle"

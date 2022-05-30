@@ -1,101 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Connexion">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        android:background="@color/bleu"/>
+    android:layout_height="match_parent">
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/_120sdp"
-    android:layout_marginTop="@dimen/_30sdp"
-    android:src="@drawable/conx"/>
-    <TextView
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/conx"
-        android:textStyle="bold"
-        android:textSize="@dimen/_25ssp"
-        android:textAlignment="center"/>
-    <EditText
-        android:id="@+id/rr"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_55sdp"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:inputType="textVisiblePassword"
-        android:hint="@string/mail"
-        android:background="@drawable/styleinput"
-        android:shadowColor="@color/gris"
-        android:paddingStart="@dimen/_60sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:textSize="@dimen/_21ssp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:drawableStart="@drawable/personne"
-        />
-    <EditText
-        android:id="@+id/motsdepasse1"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_55sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:inputType="textPassword"
-        android:hint="@string/mtp"
-        android:background="@drawable/styleinput"
-        android:shadowColor="@color/gris"
-        android:paddingStart="@dimen/_60sdp"
-        android:textSize="@dimen/_21ssp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:drawableStart="@drawable/ic_baseline_lock_24"
-        />
-    <Button
-    android:id="@+id/buttonconx"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:text="@string/conx"
-    android:textAlignment="center"
-    android:textSize="20sp"
-    android:layout_marginTop="40sp"
-    android:layout_marginStart="@dimen/_30sdp"
-    android:layout_marginEnd="@dimen/_30sdp"
-    android:background="@drawable/stylebutton"
-    android:textColor="@color/white"
-    />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20sp">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <TextView
-            android:id="@+id/mdpo"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_20ssp"
-            android:text="@string/mtpoblier"
-            android:textAlignment="center"
-            android:textSize="@dimen/_19ssp" />
-
-        <TextView
-            android:id="@+id/insc"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_170sdp"
-            android:text="@string/ins"
-            android:textSize="@dimen/_19ssp" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_marginTop="@dimen/_25sdp"
-        android:background="@color/bleu"
-        />
+            android:orientation="vertical"
+            tools:context=".activity.Activity_connexion">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/bleu" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/conx" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conx"
+                android:textAlignment="center"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/rr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/styleinput"
+                android:drawableStart="@drawable/personne"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/mail"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="@dimen/_20sdp"
+                android:shadowColor="@color/gris"
+                android:textSize="@dimen/_18ssp" />
+
+            <EditText
+                android:id="@+id/motsdepasse1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/styleinput"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:hint="@string/mtp"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/_20sdp"
+                android:shadowColor="@color/gris"
+                android:textSize="@dimen/_18ssp"
+                android:drawablePadding="@dimen/_10sdp"/>
+
+            <Button
+                android:id="@+id/buttonconx"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="40sp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/stylebutton"
+                android:text="@string/conx"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/mdpo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mtpoblier"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/insc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/ins"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/bleu"
+                    android:text="dsfgsdg" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
-</ScrollView>

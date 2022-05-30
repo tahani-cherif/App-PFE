@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application2</string>
+    <string name="app_name" translatable="false">My Application2</string>
     <string-array name="spinner1">
         <item>Francais</item>
         <item>Anglais</item>
-        <item>Tunisien</item>
+        <item>Arabe</item>
     </string-array>
     <string-array name="spinner2">
         <item>Femme</item>
@@ -19,10 +20,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="nomapp">test app</string>
-    <string name="rech">Rechrche</string>
+    <string name="nomapp">My V-Eyes</string>
+    <string name="rech">Recherche</string>
     <string name="agenda">Agenda</string>
-    <string name="block">Bloc-notes</string>
+    <string name="GMAIL">Gmail</string>
     <string name="camera">Camera</string>
     <string name="contact">Contact</string>
     <string name="hor">Horloge</string>
@@ -47,16 +48,17 @@
     <string name="etat">Etat pathologique </string>
     <string name="etatavug">malvoyant ou non voyant</string>
     <string name="conx">Connexion</string>
-    <string name="mtpoblier">mot de passe oublié</string>
+    <string name="mtpoblier">Mot de passe oublié</string>
     <string name="ins">Inscription</string>
-    <string name="paenompre">Paramétres generaux du compte</string>
+    <string name="paenompre">Paramétres génèraux du compte</string>
     <string name="nomprenomexp">tahani cherif</string>
     <string name="nom">Nom</string>
     <string name="prenom">prenom</string>
     <string name="avg">Non voyant</string>
     <string name="mal">Malvoyant</string>
     <string name="validmtp">Valider le mot de passe</string>
-    <string name="parvoix">Paramétres de la voix</string>
+    <string name="parvoix">ouvrir paramétres de la voix, pour choisir une langue entre  les 3 langues, il faut dire soit Français, ou anglais, ou arabe,
+    pour choisir une voix il faut dire femme, ou homme</string>
     <string name="activer">Activer</string>
     <string name="lang">Langue</string>
     <string name="voix">voix</string>
@@ -65,8 +67,63 @@
     <string name="anglais">Anglais</string>
     <string name="notif">Notification</string>
     <string name="activnotif">Activer notification</string>
-    <string name="dec">Déconnection</string>
+    <string name="dec">Déconnexion</string>
     <string name="envoyer">Envoyer</string>
     <string name="valider">Valider</string>
     <string name="saisirnoumdp">saisir le nouveau mot de passe</string>
+    <string name="menu">Paramétres generaux du compte, Paramétres de la voix, centre de controle, Langue, Notification, déconnexion </string>
+    <string name="parge">ouvrir paramètres généraux du compte, choisir entre modification nom et prénom, ou mot de passe</string>
+    <string name="parvo">ouvrir paramétres de la voix, pour choisir une langue entre  les 3 langues, il faut dire soit Français, ou anglais, ou arabe,
+    pour choisir une voix il faut dire femme, ou homme</string>
+    <string name="cc">ouvrir centre de controle, Pour désactiver une application, dire désactiver plus le nom de l\'application
+Pour activer une application, dire activer plus le nom de l\'application  </string>
+    <string name="parla">ouvrir langue pour activer la langue en Français, veuillez dire Français , pour activer la langue en anglais , veuillez dire anglais, pour activer la langue en arabe, veuillez dire arabe </string>
+    <string name="parnot">ouvrir notification  pour activer les notifications, veuillez dire Activer notifications, pour désactiver les notifications, veuillez dire désactiver notifications</string>
+    <string name="parconx">voulez vous s\'inscrire ou avez vous oublier Le mot de passe, ou voulez vous se connecter </string>
+    <string name="date">la date d\'aujourd\'hui est</string>
+    <string name="time">le temps est</string>
+    <string name="temp"> la température est</string>
+    <string name="appmenu">les application sont agenda gmail camera contact horloge telephone messages  maps photos</string>
+    <string name="vgmail">ouvrir application gmail</string>
+    <string name="vphoto">ouvrir application photos</string>
+    <string name="vtele">ouvrir application telephone</string>
+    <string name="vcal">ouvrir application agenda</string>
+    <string name="vcamera">ouvrir application caméra</string>
+    <string name="vcontact">ouvrir application contact</string>
+    <string name="vhrlog">ouvrir application horloge</string>
+    <string name="vmssg">ouvrir application messages</string>
+    <string name="vmap">ouvrir application map</string>
+    <string name="fal">Réessayer</string>
+    <string name="retourAcc">retour a l\'accueil </string>
+    <string name="ouvrnom">ouvrir nom et prénom</string>
+    <string name="ouvrmdp">ouvrir mot de passe</string>
+    <string name="remplirechamp">Pour remplir les champs dire oui</string>
+    <string name="activfra">La langue français est activée</string>
+    <string name="activang">La langue anglais est activée</string>
+    <string name="activarab">La langue Arabe est activée</string>
+    <string name="decnotif">notification désactivée</string>
+    <string name="actnotif">notification activée</string>
+    <string name="retouparcomp">retour aux parametrex generaux du compte</string>
+    <string name="champoblig">champ obligatoire</string>
+    <string name="verifmdp">verifier le mot de passe</string>
+    <string name="max8">le Mot de passe doit contenir minimum 8 caractères</string>
+    <string name="succe">Mise à jour faite par succès</string>
+    <string name="verifdonne">vérifier les données</string>
+    <string name="entmdp">entrer votre mot de passe actuel</string>
+    <string name="entvmdp">entrer le nouveau mot de passe</string>
+    <string name="entcmdp">entrer une autre fois le nouveau mot de passe pour la confirmation</string>
+    <string name="entnom">entrer votre nouveau Nom</string>
+    <string name="activerr">activé</string>
+    <string name="app">application</string>
+    <string name="desa">désactivé</string>
+    <string name="arabe">Arabe</string>
+    <string name="entnompre">Entrer votre nouveau Prénom</string>
+    <string name="cmdp">confirmer le mot de passe</string>
+    <string name="probconx">Les données entrantes ne correspondent à aucun compte</string>
+    <string name="loding">Chargement...</string>
+    <string name="notifsms1">vous avez reçu un message de la part de</string>
+    <string name="notifsms2">, contient</string>
+    <string name="notifphone">vous avez reçu un appelle de la part</string>
+    <string name="appdesac">cette application est inaccessible</string>
+
 </resources>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Para_generau_compte"
+    tools:context=".activity.Acitivity_usersetting"
     android:orientation="vertical">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -16,18 +16,26 @@
 
             <ImageView
                 android:id="@+id/retourpara"
-                android:layout_width="@dimen/_50sdp"
+                android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:src="@drawable/retour" />
+
+            <ImageView
+                android:id="@+id/voicemodif"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_260sdp"
+                android:src="@drawable/voice" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/my_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_marginStart="@dimen/_40sdp"
-                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_22sdp"
                 android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:title="@string/paenompre"
                 app:titleTextColor="@color/white" />
@@ -55,6 +63,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/nometprenom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_60sdp"

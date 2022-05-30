@@ -3,6 +3,43 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/bg_round.xml" value="0.2195" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/paus.xml" value="0.2185" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/sekbar.xml" value="0.1905" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/sekbarthum.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/stylebutton.xml" value="0.2055" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/styleinput.xml" value="0.237" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/stylesek.xml" value="0.1905" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/thum.xml" value="0.1905" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/thumdsek.xml" value="0.1905" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/trak.xml" value="0.1905" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/voice.xml" value="0.192" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/drawable/voice_2.xml" value="0.1905" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/Change_password.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_centrecontrole10.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_changemdp.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_changepassword.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_connexion.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_ecran_demarrage.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_inscription.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_langue.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_monprofil.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_motsdepasse.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_nomprenom.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_notification.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_para_generau_compte.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_paravoix.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_test.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/activity_webview.xml" value="0.11538461538461539" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/mailmdpoublie.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/mdpoublie.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/my_dropdwon_item.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/my_size_item.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/nheader_navigation.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/progress_dialog.xml" value="0.4" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/layout/simple_list_item_1.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/App PFE/App PFE/app/src/main/res/menu/exmenu.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/conx_foreground.xml" value="0.1645" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1645" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/circle.xml" value="0.1645" />
@@ -60,6 +97,24 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/menu/exmenu.xml" value="0.16" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/conx.xml" value="0.1605" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_connexion.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_inscription.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_langue.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_monprofil.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_motsdepasse.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_nomprenom.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_notification.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/activity_para_generau_compte.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/mailmdpoublie.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/User/Desktop/App PFE/App PFE/app/src/main/res/layout/mdpoublie.xml" value="0.20512820512820512" />
+        <entry key="app/src/main/res/drawable/personne.xml" value="0.1745" />
+        <entry key="app/src/main/res/layout/activity_connexion.xml" value="0.21025641025641026" />
+        <entry key="app/src/main/res/layout/activity_inscription.xml" value="0.21025641025641026" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_motsdepasse.xml" value="0.21025641025641026" />
+        <entry key="app/src/main/res/layout/activity_nomprenom.xml" value="0.21025641025641026" />
+        <entry key="app/src/main/res/layout/mdpoublie.xml" value="0.21025641025641026" />
       </map>
     </option>
   </component>

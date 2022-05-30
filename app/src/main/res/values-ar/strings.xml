@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">My Application2</string>
+    <string-array name="spinner1">
+        <item>الفرنسية</item>
+        <item>الإنجليزية</item>
+        <item>العربية</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>مرأة</item>
+        <item>رجل</item>
+    </string-array>
+    <string name="title_activity_main12">MainActivity12</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="nomapp">My V-Eyes</string>
+    <string name="rech">بحث</string>
+    <string name="agenda">التقويم</string>
+    <string name="GMAIL">البريد</string>
+    <string name="camera">الكاميرا</string>
+    <string name="contact">جهات الاتصال</string>
+    <string name="hor">الساعة</string>
+    <string name="telephone">الهاتف</string>
+    <string name="msg">الرسائل</string>
+    <string name="par">لإعدادات</string>
+    <string name="map">خرائط</string>
+    <string name="photo">صور</string>
+    <string name="controle">مركز التحكم</string>
+    <string name="mtp">كلمة مرور</string>
+    <string name="mtpA">كلمة مرور الحالية</string>
+    <string name="smtpA">إدخل كلمة مرور الحالية</string>
+    <string name="nmtp">كلمة مرور جديدة</string>
+    <string name="nvmtp">أدخل كلمة مرور جديدة</string>
+    <string name="cnmtp">تأكيد كلمة المرور الجديدة</string>
+    <string name="confirme">تأكيد كلمة المرور</string>
+    <string name="modef">تعديل</string>
+    <string name="profil">ملفي</string>
+    <string name="nomprenom"> الاسم و اللقب  </string>
+    <string name="mail">لبريد الإلكتروني</string>
+    <string name="adresmail">exemple@gmail.com</string>
+    <string name="etat">الحالة المرضية</string>
+    <string name="etatavug">ضعاف البصر أو أعمى</string>
+    <string name="conx">تسجيل الدخول</string>
+    <string name="mtpoblier">نسيت كلمة مرور</string>
+    <string name="ins">تسجيل</string>,
+    <string name="paenompre">اعدادات الحساب العامة</string>
+    <string name="nomprenomexp">تهاني شريف</string>
+    <string name="nom">اسم</string>
+    <string name="prenom">اللقب </string>
+    <string name="avg">اعمى</string>
+    <string name="mal">ضعاف البصر</string>
+    <string name="validmtp">تحقق من كلمة المرور</string>
+    <string name="parvoix"> فتح إعدادات الصوت ، لاختيار لغة بين 3 لغات ، عليك أن تقول إما الفرنسية, أو الإنجليزية, أو العربية ، لاختيار صوت عليك أن تقوله مرأة, أو رجل</string>
+    <string name="activer">تفعيل</string>
+    <string name="lang">لغة</string>
+    <string name="voix">صوت</string>
+    <string name="vitesse">سرعة</string>
+    <string name="franc">الفرنسية</string>
+    <string name="anglais">الإنجليزية</string>
+    <string name="notif">إشعارات</string>
+    <string name="activnotif">تفعيل إشعارات</string>
+    <string name="dec">تسجيل خروج</string>
+    <string name="envoyer">ارسال</string>
+    <string name="valider">تفعيل</string>
+    <string name="saisirnoumdp">أدخل كلمة مرور جديدة</string>
+    <string name="menu"> اعدادات الحساب العامة, إعدادات الصوت, مركز التحكم, لغة, إشعار, تسجيل خروج </string>
+    <string name="parge">فتح إعدادات الحساب العامة, اختر بين تغيير الاسم واللقب,  أو كلمة المرور</string>
+    <string name="parvo"> إعدادات الصوت</string>
+    <string name="cc">فتح مركز التحكم لتعطيل أحد التطبيقات ، قل "تعطيل بالإضافة إلى اسم التطبيق" لتفعيل أحد التطبيقات ، قل "تفعيل بالإضافة إلى اسم التطبيق"</string>
+    <string name="parla">فتح اللغة لتفعيل اللغة بالفرنسية من فضلك قل الفرنسية, لتفعيل اللغة بالانجليزية من فضلك قل الانجليزية, لتفعيل اللغة بالعربية من فضلك قل العربية </string>
+    <string name="parnot">فتح الإشعارات لتفعيل الإشعارات ، يرجى قول تفعيل الإشعارات ، لتعطيل الإشعارات ، يرجى قول تعطيل الإشعارات</string>
+    <string name="parconx">هل تريد التسجيل أم نسيت كلمة المرور أو تريد تسجيل الدخول؟ </string>
+    <string name="date">تاريخ اليوم هو</string>
+    <string name="time">الوقت هو</string>
+    <string name="temp">درجة الحرارة هي</string>
+    <string name="appmenu">,التطبيقات هي التقويم, البريد, كاميرا, جهات الاتصال,  الساعة, الهاتف, الرسائل, الخرائط, الصور</string>
+    <string name="vgmail">بريد</string>
+    <string name="vphoto">افتح تطبيق الصور</string>
+    <string name="vtele">افتح تطبيق الهاتف</string>
+    <string name="vcal"> افتح تطبيق التقويم </string>
+    <string name="vcamera">افتح تطبيق الكاميرا</string>
+    <string name="vcontact">افتح تطبيق جهات الاتصال</string>
+    <string name="vhrlog">افتح تطبيق الساعة</string>
+    <string name="vmssg">افتح تطبيق الرسائل</string>
+    <string name="vmap">افتح تطبيق خريطة</string>
+    <string name="fal">حاول مرة أخرى</string>
+    <string name="retourAcc">عودة إلى الإستقبال</string>
+    <string name="ouvrnom">فتح الاسم و اللقب</string>
+    <string name="ouvrmdp">فتح كلمة المرور</string>
+    <string name="remplirechamp">لملء الحقول قل نعم</string>
+    <string name="activfra">تم تفعيل اللغة الفرنسية</string>
+    <string name="activang">تم تفعيل اللغة الإنجليزية</string>
+    <string name="activarab">تم تفعيل اللغة العربية</string>
+    <string name="decnotif">تعطيل الاشعارات</string>
+    <string name="actnotif">تفعيل الاشعارات</string>
+    <string name="retouparcomp">العودة إلى إعدادات الحساب العامة</string>
+    <string name="champoblig">حقل اجباري</string>
+    <string name="verifmdp">اكد كلمة المرور</string>
+    <string name="max8">يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل</string>
+    <string name="succe">تم التحديث بالنجاح</string>
+    <string name="verifdonne">تحقق من البيانات</string>
+    <string name="entmdp">أدخل كلمة المرور الحالية</string>
+    <string name="entvmdp">أدخل كلمة مرور جديدة</string>
+    <string name="entcmdp">أدخل كلمة المرور الجديدة مرة أخرى للتأكيد</string>
+    <string name="entnom">أدخل اسمك الجديد</string>
+    <string name="activerr">تفعلا</string>
+    <string name="app">تطبيق</string>
+    <string name="desa">تعطلا</string>
+    <string name="arabe"> العربية</string>
+    <string name="entnompre">أدخل اللقب الجديد</string>
+    <string name="cmdp">أكد كلمة المرور</string>
+    <string name="probconx">البيانات الواردة لا تتطابق مع أي حساب</string>
+    <string name="loding">...تحميل</string>
+    <string name="notifsms1">تلقيت رسالة من</string>
+    <string name="notifsms2"> ، يحتوي على</string>
+    <string name="notifphone">تلقيت مكالمة من</string>
+    <string name="appdesac">هذا التطبيق غير قابل للاستخدام</string>
+</resources>

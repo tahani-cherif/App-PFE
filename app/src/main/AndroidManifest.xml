@@ -2,57 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication2">
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL" />
+    <uses-permission android:name="com.google.android.gm.permission.AUTO_SEND" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/image"
-        android:label="mon application"
-        android:roundIcon="@mipmap/image"
+        android:icon="@mipmap/test2"
+        android:label="@string/nomapp"
+        android:roundIcon="@mipmap/test2"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".MdpoublieActivity"
+            android:name=".activity.Activity_webview"
             android:exported="false" />
         <activity
-            android:name=".MailmdpoublieActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Motsdepasse"
-            android:exported="false" />
-        <activity
-            android:name=".Maincentrecontrole"
-            android:exported="false" />
-        <activity
-            android:name=".Notification"
-            android:exported="false" />
-        <activity
-            android:name=".Langue"
-            android:exported="false" />
-        <activity
-            android:name=".Para_voix"
-            android:exported="false" />
-        <activity
-            android:name=".Inscription"
-            android:exported="false" />
-        <activity
-            android:name=".Nom_prenom"
-            android:exported="false" />
-        <activity
-            android:name=".Para_generau_compte"
-            android:exported="false" />
-        <activity
-            android:name=".Connexion"
-            android:exported="false" />
-        <activity
-            android:name=".Monprofile"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Activity_ecran_demarrage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,6 +33,76 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.changepassword"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_forgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_settingpassword"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_controlcenter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_notification"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_Langue"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_settingvoice"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_Inscription"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_settingusername"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Acitivity_usersetting"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Activity_connexion"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.Activity_userprofil"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".activity.notifsms"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".activity.notifgmail"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.PROVIDER_CHANGED"
+                    android:priority="-10" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="gmail-ls"
+                    android:pathPattern="/unread/.*"
+                    android:scheme="content" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".activity.notifphone"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -43,8 +43,24 @@
                     android:layout_height="@dimen/_50sdp"
                     android:src="@drawable/circle"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_marginStart="@dimen/_260sdp"
+                    android:layout_marginStart="@dimen/_200sdp"
                     />
+                <ImageView
+                    android:id="@+id/paus"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/paus"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_230sdp"
+                    />
+
+                <ImageView
+                    android:id="@+id/voicemenu"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/voice" />
             </RelativeLayout>
         </com.google.android.material.appbar.AppBarLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -78,7 +94,7 @@
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_140sdp"
-            android:layout_marginTop="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_131sdp"
             android:src="@drawable/cloudy" />
 
         <TextView
@@ -90,25 +106,13 @@
             android:layout_marginEnd="@dimen/_50sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_15sdp"
-            android:text="dfffe" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_32sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_180sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:background="@drawable/recherche"
-            android:drawableStart="@drawable/rech"
-            android:hint="@string/rech"
-            android:paddingStart="@dimen/_20sdp"
-            android:textAlignment="center"
-            android:textSize="@dimen/_20ssp" />
+            android:text="meteo" />
 
         <ImageView
             android:id="@+id/imgbatt"
             android:layout_width="@dimen/_35sdp"
             android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_260sdp"
+            android:layout_marginStart="@dimen/_250sdp"
             android:layout_marginTop="@dimen/_70sdp"
             android:src="@drawable/batterie100" />
 
@@ -116,7 +120,7 @@
             android:id="@+id/test1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_259sdp"
+            android:layout_marginStart="@dimen/_250sdp"
             android:layout_marginTop="@dimen/_110sdp"
             android:text="100%"
             android:textSize="@dimen/_15ssp"
@@ -126,253 +130,31 @@
             android:id="@+id/wifi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_265sdp"
+            android:layout_marginStart="@dimen/_260sdp"
             android:layout_marginTop="@dimen/_130sdp"
             android:src="@drawable/wifi" />
 
-
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/rech"
+            />
 
     </RelativeLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/_70sdp"
-        >
-
-
-        <LinearLayout
+        <ListView
+            android:id="@+id/lv1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_150sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/agenda" />
-
-                    <TextView
-                        android:id="@+id/mailprofil"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:text="@string/agenda"
-                        android:textSize="@dimen/_18ssp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/blocknote"
-                        android:layout_marginStart="@dimen/_10sdp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/block"
-                        android:textSize="@dimen/_18ssp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/camera" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:text="@string/camera"
-                        android:textSize="@dimen/_18ssp"/>
-                </LinearLayout>
-
-            </LinearLayout>
-            GGG
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/contact" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:text="@string/contact"
-                        android:textSize="@dimen/_18ssp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/horloge"
-                        android:layout_marginStart="@dimen/_10sdp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/hor"
-                        android:textSize="@dimen/_18ssp"
-                        android:layout_marginStart="@dimen/_20sdp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/telephone" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/telephone"
-                        android:textSize="@dimen/_18ssp"/>
-                </LinearLayout>
-
-            </LinearLayout>
-            rrr
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/message" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:text="@string/msg"
-                        android:textSize="@dimen/_18ssp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-
-
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/paramet"
-                        android:layout_marginStart="@dimen/_10sdp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/par"
-                        android:textSize="@dimen/_18ssp"
-                        android:layout_marginStart="@dimen/_10sdp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="@dimen/_90sdp"
-                        android:layout_height="@dimen/_80sdp"
-                        android:layout_marginTop="-15dp"
-                        android:src="@drawable/maps" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/map"
-                        android:textSize="@dimen/_18ssp"
-                        android:layout_marginStart="@dimen/_25sdp"/>
-                </LinearLayout>
-
-            </LinearLayout>
-            lll
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_30sdp"
-                >
-
-                <ImageView
-                    android:layout_width="@dimen/_90sdp"
-                    android:layout_height="@dimen/_80sdp"
-                    android:layout_marginTop="-15dp"
-                    android:src="@drawable/photos" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:text="@string/photo"
-                    android:textSize="@dimen/_18ssp"
-                    android:layout_marginBottom="@dimen/_20ssp"/>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchView"
+            android:dividerHeight="2dp"
+            android:layout_marginTop="@dimen/_220sdp"
+            />
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -380,5 +162,13 @@
         android:layout_gravity="start"
         app:menu="@menu/exmenu"
         app:headerLayout="@layout/nheader_navigation"
-        />
+        >
+        <ImageView
+            android:id="@+id/option7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voice_2"
+            android:layout_marginTop="@dimen/_450sdp"
+            />
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>

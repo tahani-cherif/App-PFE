@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Motsdepasse"
+    tools:context=".activity.Activity_settingpassword"
     android:orientation="vertical">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -34,6 +34,12 @@
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:title="@string/mtp"
                 app:titleTextColor="@color/white" />
+            <ImageView
+                android:id="@+id/voicemots"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_260sdp"
+                android:src="@drawable/voice" />
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <TextView
@@ -46,6 +52,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"/>
     <EditText
+        android:id="@+id/mdpc"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/styleinput"
@@ -55,8 +62,10 @@
         android:inputType="textPassword"
         android:paddingStart="@dimen/_20sdp"
         android:hint="@string/smtpA"
-        android:textSize="@dimen/_18ssp"
-        android:drawableStart="@drawable/lock"/>
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/lock"
+      />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,6 +76,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"/>
     <EditText
+        android:id="@+id/nmdp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/styleinput"
@@ -76,7 +86,8 @@
         android:inputType="textPassword"
         android:paddingStart="@dimen/_20sdp"
         android:hint="@string/nvmtp"
-        android:textSize="@dimen/_18ssp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="@dimen/_10sdp"
         android:drawableStart="@drawable/lock"/>
     <TextView
         android:layout_width="wrap_content"
@@ -88,6 +99,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"/>
     <EditText
+        android:id="@+id/cnmdp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/styleinput"
@@ -96,10 +108,12 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:inputType="textPassword"
         android:paddingStart="@dimen/_20sdp"
-        android:hint="confirmer le mot de passe"
-        android:textSize="@dimen/_18ssp"
-        android:drawableStart="@drawable/lock"/>problem
+        android:hint="@string/cmdp"
+        android:textSize="@dimen/_16ssp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/lock"/>
     <Button
+        android:id="@+id/modifmtdp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_38sdp"
         android:layout_marginStart="@dimen/_10sdp"
