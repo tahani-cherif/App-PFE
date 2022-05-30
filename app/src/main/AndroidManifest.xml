@@ -22,9 +22,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".activity.Activity_webview"
-            android:exported="false" />
-        <activity
             android:name=".Activity_ecran_demarrage"
             android:exported="true">
             <intent-filter>
@@ -33,9 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.changepassword"
-            android:exported="false" />
         <activity
             android:name=".activity.Activity_forgetpassword"
             android:exported="false" />
@@ -79,21 +73,6 @@
             android:permission="android.permission.BROADCAST_SMS">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name=".activity.notifgmail"
-            android:exported="true">
-            <intent-filter>
-                <action
-                    android:name="android.intent.action.PROVIDER_CHANGED"
-                    android:priority="-10" />
-                <action android:name="android.intent.action.VIEW" />
-
-                <data
-                    android:host="gmail-ls"
-                    android:pathPattern="/unread/.*"
-                    android:scheme="content" />
             </intent-filter>
         </receiver>
         <receiver

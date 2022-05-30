@@ -157,13 +157,13 @@ public class Activity_settingpassword extends AppCompatActivity {
             nouveaumdp.setText("");
             confirmemdp.setText("");
             String b=getResources().getString(R.string.succe);
-            int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+            textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
             Toast.makeText(Activity_settingpassword.this,b,Toast.LENGTH_SHORT).show();
             progressDialog.dismiss();
         }).addOnFailureListener(er->
         {
             String b=getResources().getString(R.string.verifdonne);
-            int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+            textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
             Toast.makeText(Activity_settingpassword.this,b,Toast.LENGTH_SHORT).show();
             progressDialog.dismiss();
         });
@@ -196,17 +196,17 @@ public class Activity_settingpassword extends AppCompatActivity {
                     String x=result.get(0);
                     if(x.equals("oui")||x.equals("yes")||x.equals("نعم"))
                     {   String b=getResources().getString(R.string.entmdp);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                       textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                         motdepasse.requestFocus();
                     }
                     else if(x.equals("nouveau mot de passe")||x.equals("new password")||x.equals("كلمه المرور الجديده"))
                     {   String b=getResources().getString(R.string.entvmdp);
-                        int speech=textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
                         nouveaumdp.requestFocus();
                     }
                     else if(x.equals("confirmer nouveau mot de passe")||x.equals("confirm the new password")||x.equals("تاكيد كلمه المرور الجديده"))
                     {   String b=getResources().getString(R.string.entcmdp);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                         confirmemdp.requestFocus();
                     }
                     else if(x.equals("modifier")||x.equals("edit")||x.equals("تعديل"))

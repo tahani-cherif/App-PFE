@@ -248,7 +248,9 @@ public class MainActivity extends AppCompatActivity {
       reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                utilisateur userprofil=snapshot.getValue(utilisateur.class);
+                for(DataSnapshot snapshot1:snapshot.getChildren()){
+                    if(snapshot1.getKey().equals(userID)){
+                        utilisateur userprofil=snapshot1.getValue(utilisateur.class);
                // Log.d("Currentdate",userprofil.getMail());
                 if (userprofil != null)
                 {  agen=userprofil.getAgen();
@@ -261,7 +263,8 @@ public class MainActivity extends AppCompatActivity {
                     map=userprofil.getMap();
                     photo=userprofil.getPhoto();
                     notif=userprofil.getNotif();
-                }
+                    Log.d("ee", String.valueOf(photo));
+                }}}
             }
 
             @Override
@@ -350,7 +353,7 @@ public class MainActivity extends AppCompatActivity {
                             draw.close();
                             String b6 = getResources().getString(R.string.parconx);
                             textToSpeech.speak(b6, TextToSpeech.QUEUE_FLUSH, null);
-                            editor2.putInt("gmail",1).commit();
+                            /*editor2.putInt("gmail",1).commit();
                             editor2.putInt("agen",1).commit();
                             editor2.putInt("camera",1).commit();
                             editor2.putInt("contact",1).commit();
@@ -360,7 +363,7 @@ public class MainActivity extends AppCompatActivity {
                             editor2.putInt("map",1).commit();
                             editor2.putInt("photo",1).commit();
                             editor2.putInt("notif",1).commit();
-                            return true;
+                            return true;*/
                         default:
                             return false;
                     }

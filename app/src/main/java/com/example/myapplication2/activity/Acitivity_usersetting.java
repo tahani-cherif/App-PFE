@@ -61,23 +61,23 @@ public class Acitivity_usersetting extends AppCompatActivity {
                 { startActivity(new Intent(this, MainActivity.class));
                     finish();
                     String b=getResources().getString(R.string.retourAcc);
-                    int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);}
+                    textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);}
         );
         modefnom.setOnClickListener(v ->
                 {startActivity(new Intent(this, Activity_settingusername.class));
                     finish();
                     String b=getResources().getString(R.string.ouvrnom);
-                    int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);}
+                    textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);}
         );
         modefmot.setOnClickListener(v ->
         {startActivity(new Intent(this, Activity_settingpassword.class));
             finish();
             String b=getResources().getString(R.string.ouvrmdp);
-            int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+           textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
         }
         );
       if(currentUser!= null) {
-            userID = currentUser.getUid(); //Do what you need to do with the id
+            userID = currentUser.getUid();
             Log.d("Entered","yessss");
         }
         reference= FirebaseDatabase.getInstance().getReference().child("Users");
@@ -129,19 +129,19 @@ public class Acitivity_usersetting extends AppCompatActivity {
                     String x=result.get(0);
                     if(x.equals("nom et prénom") ||x.equals("last name first name")||x.equals("الاسم واللقب")  )
                     {  String b=getResources().getString(R.string.ouvrnom)+getResources().getString(R.string.remplirechamp);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                         startActivity(new Intent(this, Activity_settingusername.class));
                         finish();
                     }
                     else if(x.equals("mot de passe")||x.equals("password")||x.equals("كلمه المرور"))
                     {    String b=getResources().getString(R.string.ouvrmdp)+getResources().getString(R.string.remplirechamp);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                         startActivity(new Intent(this, Activity_settingpassword.class));
                         finish();
                     }
                     else{
                         String b=getResources().getString(R.string.fal);
-                        int speech=textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
                     }
 
                 }
@@ -153,9 +153,8 @@ public class Acitivity_usersetting extends AppCompatActivity {
     public void onBackPressed() {
         String b=getResources().getString(R.string.retourAcc);
         finish();
-        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
         startActivity(new Intent(this,MainActivity.class));
         return;
     }
-
 }

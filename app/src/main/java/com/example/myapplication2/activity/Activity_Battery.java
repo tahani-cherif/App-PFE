@@ -28,8 +28,8 @@ public class Activity_Battery extends BroadcastReceiver {
             int scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
             percentage = level * 100 / scale;
             percentageLabel.setText(percentage + "%");
-           String action = intent.getAction();
-           Resources res = context.getResources();
+            String action = intent.getAction();
+            Resources res = context.getResources();
         if (action != null && action.equals(Intent.ACTION_BATTERY_CHANGED)) {
             int status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
             String message = "";

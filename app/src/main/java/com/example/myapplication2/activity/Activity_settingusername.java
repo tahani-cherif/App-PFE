@@ -99,7 +99,7 @@ public class Activity_settingusername extends AppCompatActivity {
             changenom.setText("");
             changeprenom.setText("");
             String b=getResources().getString(R.string.succe);
-            int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+            textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
             Toast.makeText(this,b,Toast.LENGTH_SHORT).show();
             progressDialog.dismiss();
         }).addOnFailureListener(er->
@@ -136,14 +136,14 @@ public class Activity_settingusername extends AppCompatActivity {
                     String x=result.get(0);
                     if(x.equals("oui")||x.equals("yes")||x.equals("نعم"))
                     {  String b=getResources().getString(R.string.entnom);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                         changenom.requestFocus();
                         if(!textToSpeech.isSpeaking())
                         {speak();}
                     }
                     else if(x.equals("prénom")||x.equals("last name")||x.equals("اللقب"))
                     {   String b=getResources().getString(R.string.entnompre);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                         changeprenom.requestFocus();
                     }
                     else if(x.equals("modifier")||x.equals("edit")||x.equals("تعديل"))
@@ -152,7 +152,7 @@ public class Activity_settingusername extends AppCompatActivity {
                     }
                     else{
                         String b=getResources().getString(R.string.fal);
-                        int speech=textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
                     }
                 }
                 break;

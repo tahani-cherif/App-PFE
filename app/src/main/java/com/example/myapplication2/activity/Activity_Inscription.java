@@ -139,8 +139,8 @@ public class Activity_Inscription extends AppCompatActivity implements View.OnCl
             Toast.makeText(this, "verifier mot de passe", Toast.LENGTH_SHORT).show();
             vmotsdepasse.requestFocus();
             return;
-        }   //ne sont pas identiques par le champ du mot de passe
-        progressDialog=new ProgressDialog(Activity_Inscription.this);// creation de progress
+        }
+        progressDialog=new ProgressDialog(Activity_Inscription.this);
         progressDialog.show();
         progressDialog.setContentView(R.layout.progress_dialog);
         progressDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);

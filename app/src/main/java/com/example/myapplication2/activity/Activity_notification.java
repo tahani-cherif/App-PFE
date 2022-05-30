@@ -160,16 +160,16 @@ public class Activity_notification extends AppCompatActivity {
                     if(x.equals("désactiver notification")||x.equals("turn off notification")||x.equals("تعطيل الاشعارات"))
                     {   notife.setChecked(false);
                         String b=getResources().getString(R.string.decnotif);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                     }
                    else if(x.equals("activer notification")||x.equals("turn on notification")||x.equals("تفعيل الاشعارات"))
                     {   notife.setChecked(true);
                         String b=getResources().getString(R.string.actnotif);
-                        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+                      textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
                     }
                     else{
                         String b=getResources().getString(R.string.fal);
-                        int speech=textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
+                        textToSpeech.speak(b,TextToSpeech.QUEUE_FLUSH,null);
                     }
                 }
                 break;
@@ -181,7 +181,7 @@ public class Activity_notification extends AppCompatActivity {
         startActivity(new Intent(this, MainActivity.class));
         finish();
         String b=getResources().getString(R.string.retourAcc);
-        int speech=textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
+        textToSpeech.speak(b, TextToSpeech.QUEUE_FLUSH,null);
         return;
     }
 }

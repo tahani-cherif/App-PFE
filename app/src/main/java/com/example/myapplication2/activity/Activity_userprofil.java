@@ -49,7 +49,7 @@ public class Activity_userprofil extends AppCompatActivity {
 
 
         if(currentUser!= null) {
-            userID = currentUser.getUid(); //Do what you need to do with the id
+            userID = currentUser.getUid();
             Log.d("Entered","yessss");
         }
         routeur.setOnClickListener(v ->
