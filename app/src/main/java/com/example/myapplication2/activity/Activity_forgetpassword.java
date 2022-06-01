@@ -49,12 +49,12 @@ public class Activity_forgetpassword extends AppCompatActivity {
                 String mailmodeff=mailmodef.getText().toString().trim();
 
                 if(mailmodeff.isEmpty())
-                {  mailmodef.setError("mail obliatoire");
+                {  mailmodef.setError("mail obligatoire");
                     mailmodef.requestFocus();
                 }
 
                 if (!Patterns.EMAIL_ADDRESS.matcher(mailmodeff).matches())
-                { mailmodef.setError("adresse ne sont pas valide");
+                { mailmodef.setError("adresse n'est pas valide");
                     mailmodef.requestFocus();
                     return;
                 }

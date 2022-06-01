@@ -204,7 +204,7 @@ public class Activity_controlcenter extends AppCompatActivity {
                         +getResources().getString(R.string.activerr);
                     textToSpeech.speak(x, TextToSpeech.QUEUE_FLUSH,null);
                     HashMap<String,Object> hashmap=new HashMap<>();
-                    hashmap.put("gmail",1);
+                    hashmap.put("gamil",1);
                     reference.child(userID).updateChildren(hashmap).addOnSuccessListener(suc->
                     {
                     }).addOnFailureListener(er->
@@ -212,13 +212,13 @@ public class Activity_controlcenter extends AppCompatActivity {
                 }
                 else
                 {   SharedPreferences.Editor editor=getSharedPreferences("agenda",MODE_PRIVATE).edit();
-                    editor.putBoolean("gamil1",false);
+                    editor.putBoolean("gmail1",false);
                     editor.apply();
                     String x=getResources().getString(R.string.app)+getResources().getString(R.string.GMAIL)
                         +getResources().getString(R.string.desa);
                     textToSpeech.speak(x, TextToSpeech.QUEUE_FLUSH,null);
                     HashMap<String,Object> hashmap=new HashMap<>();
-                    hashmap.put("gmail",0);
+                    hashmap.put("gamil",0);
                     reference.child(userID).updateChildren(hashmap).addOnSuccessListener(suc->
                     {
                     }).addOnFailureListener(er->

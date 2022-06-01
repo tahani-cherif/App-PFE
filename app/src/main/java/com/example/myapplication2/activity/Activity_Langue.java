@@ -242,7 +242,8 @@ public class Activity_Langue extends AppCompatActivity {
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"fr_FR");}
         else if(langue==2 || lastposition ==1){
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"en-US"); }
-        else if(langue==3|| lastposition ==2){  intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ar");}
+        else if(langue==3|| lastposition ==2){
+            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ar");}
            intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "");
         try {
             startActivityForResult(intent, REQUEST_CODE_SPEECH_INPUT);

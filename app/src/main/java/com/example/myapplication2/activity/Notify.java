@@ -191,52 +191,6 @@ public class Notify {
         return this;
     }
 
-    public Notify setChannelId(@NonNull String channelId) {
-        if (!channelId.isEmpty()){
-            this.channelId = channelId;
-            this.builder.setChannelId(channelId);
-        }
-        return this;
-    }
-
-    public Notify setChannelName(@NonNull String channelName) {
-        if (!channelName.isEmpty())
-            this.channelName = channelName;
-        return this;
-    }
-
-    public Notify setChannelDescription(@NonNull String channelDescription) {
-        if (!channelDescription.isEmpty())
-            this.channelDescription = channelDescription;
-        return this;
-    }
-
-    public Notify setImportance(@NonNull NotifyImportance importance){
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            switch (importance){
-                case MIN:
-                    this.importance = Notification.PRIORITY_LOW;
-                    this.oreoImportance = NotificationManager.IMPORTANCE_MIN;
-                    break;
-
-                case LOW:
-                    this.importance = Notification.PRIORITY_LOW;
-                    this.oreoImportance = NotificationManager.IMPORTANCE_LOW;
-                    break;
-
-                case HIGH:
-                    this.importance = Notification.PRIORITY_HIGH;
-                    this.oreoImportance = NotificationManager.IMPORTANCE_HIGH;
-                    break;
-
-                case MAX:
-                    this.importance = Notification.PRIORITY_MAX;
-                    this.oreoImportance = NotificationManager.IMPORTANCE_MAX;
-                    break;
-            }
-        }
-        return this;
-    }
 
     private void setDefaultPriority(){
         this.importance = Notification.PRIORITY_DEFAULT;
@@ -244,25 +198,12 @@ public class Notify {
             this.oreoImportance = NotificationManager.IMPORTANCE_DEFAULT;
     }
 
-    public Notify enableVibration(boolean vibration) {
-        this.vibration = vibration;
-        return this;
-    }
-
-    public Notify setAutoCancel(boolean autoCancel) {
-        this.autoCancel = autoCancel;
-        return this;
-    }
 
     public Notify largeCircularIcon() {
         this.circle = true;
         return this;
     }
 
-    public Notify setVibrationPattern(long[] vibrationPattern) {
-        this.vibrationPattern = vibrationPattern;
-        return this;
-    }
 
     public Notify setColor(@ColorRes int color) {
         this.color = color;
@@ -279,25 +220,8 @@ public class Notify {
         return this;
     }
 
-    public Notify setLargeIcon(@NonNull String largeIconUrl) {
-        this.largeIcon = largeIconUrl;
-        return this;
-    }
 
-    public Notify setPicture(@DrawableRes int bigPicture) {
-        this.picture = bigPicture;
-        return this;
-    }
 
-    public Notify setPicture(@NonNull String bigPictureUrl) {
-        this.picture = bigPictureUrl;
-        return this;
-    }
-
-    public Notify setAction(@NonNull Intent action) {
-        this.action = action;
-        return this;
-    }
 
     public Notify setId(int id) {
         this.id = id;
@@ -308,29 +232,7 @@ public class Notify {
         return id;
     }
 
-    public String getChannelId() {
-        return channelId;
-    }
 
-    public String getChannelName() {
-        return channelName;
-    }
-
-    public String getChannelDescription() {
-        return channelDescription;
-    }
-
-    public static void cancel(@NonNull Context context, int id){
-        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        if (notificationManager != null)
-            notificationManager.cancel(id);
-    }
-
-    public static void cancelAll(@NonNull Context context){
-        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        if (notificationManager != null)
-            notificationManager.cancelAll();
-    }
 }
 
 

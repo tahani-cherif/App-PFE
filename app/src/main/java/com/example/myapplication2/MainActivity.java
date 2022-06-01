@@ -106,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.photos};
     List<itemsearch> listitem=new ArrayList<>();
     CustomAdapter customAdapter;
-    String isConnedted3="";
     public static  int lastposition,lastposition2,langue,vite;
     public static float vitesse;
     SharedPreferences.Editor editor,editor2;
@@ -244,13 +243,11 @@ public class MainActivity extends AppCompatActivity {
             userID = currentUser.getUid();
             Log.d("Entered","yessss");
         }
-        reference= FirebaseDatabase.getInstance().getReference().child("Users");
-      reference.addListenerForSingleValueEvent(new ValueEventListener() {
+        reference= FirebaseDatabase.getInstance().getReference("Users");
+      reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot snapshot1:snapshot.getChildren()){
-                    if(snapshot1.getKey().equals(userID)){
-                        utilisateur userprofil=snapshot1.getValue(utilisateur.class);
+                        utilisateur userprofil=snapshot.getValue(utilisateur.class);
                // Log.d("Currentdate",userprofil.getMail());
                 if (userprofil != null)
                 {  agen=userprofil.getAgen();
@@ -263,8 +260,8 @@ public class MainActivity extends AppCompatActivity {
                     map=userprofil.getMap();
                     photo=userprofil.getPhoto();
                     notif=userprofil.getNotif();
-                    Log.d("ee", String.valueOf(photo));
-                }}}
+                    Log.d("ee", String.valueOf(gamil));
+                }
             }
 
             @Override
